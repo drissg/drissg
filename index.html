@@ -54,8 +54,7 @@
 </div>
 
 <div class="container">
-    <!-- Example row of columns -->
-    <div class="row">
+    <div class="row top30">
         <div class="col-md-6">
             <h2>Wo liegt der Zeltplatz?</h2>
 
@@ -67,7 +66,11 @@
         </div>
         <div class="col-md-4 col-md-offset-2">
             <div id="google-maps"
-                         ></div>
+                    ></div>
+            <!-- Button trigger modal -->
+            <button class="btn btn-success btn-lg btn-block top30" data-toggle="modal" data-target="#myModal">
+                Photosphere im Zelt
+            </button>
         </div>
     </div>
     <div class="row top30">
@@ -82,13 +85,13 @@
         </div>
 
         <div class="col-md-4 col-md-offset-2">
-            <a class="btn btn-primary btn-large btn-block top30" href="#">Doodle</a>
+            <a class="btn btn-primary btn-large btn-block top30" href="#">Link zum Doodle</a>
             <a class="btn btn-default btn-large btn-block top30" href="#">Facebook Event</a>
         </div>
     </div>
     <div class="row top30">
         <div class="col-md-6">
-            <h2>Wieso macht ihr das?</h2>
+            <h2 title="Wieso" id="why">Wieso macht ihr das?</h2>
 
             <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
                 condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis
@@ -127,7 +130,7 @@
 
             079 660 64 36 <br/>
 
-            <a href="mailto:drissg@gmail.com ">drissg@gmail.com </a>  <br/>
+            <a href="mailto:drissg@gmail.com ">drissg@gmail.com </a> <br/>
 
 
         </div>
@@ -137,7 +140,7 @@
 
             079 439 65 38<br/>
 
-            <a href="mailto:zambailroman@hotmail.com ">zambailroman@hotmail.com</a>  <br/>
+            <a href="mailto:zambailroman@hotmail.com ">zambailroman@hotmail.com</a> <br/>
 
 
         </div>
@@ -160,6 +163,20 @@
     </footer>
 </div>
 <!-- /container -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">Photosphere</h4>
+            </div>
+            <div class="modal-body">
+                <div id="awesome-tent"
+                        ></div>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
 <script src="https://maps.googleapis.com/maps/api/js?v=3"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

@@ -9,10 +9,14 @@
     margin-top: 30px;
 }
 
-#google-maps {
+#google-maps, #awesome-tent {
     width:100%;
     border: none;
     height: 200px;
+}
+
+#awesome-tent {
+    height:500px;
 }
 
 .jumbotron-image {
