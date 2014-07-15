@@ -74,7 +74,7 @@ jQuery(function ($) {
                 centerHeading: 10,
                 getTileUrl: function (room, zoom, x, y) {
                     random = Math.random();
-                    return "/img/sphere.jpg?random="+random;
+                    return "img/sphere.jpg?random="+random;
                 }
             }
         };
