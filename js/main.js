@@ -1,4 +1,22 @@
-$(function () {
+jQuery(function ($) {
+
+    var title, id, link, random;
+    $('.content h2').each(function(){
+        title = $(this).attr('title');
+        id = $(this).attr('id');
+        link = $('<li><a href="#'+id+'" > '+title+'</a></li>');
+        $(link).click(function(e){
+            e.preventDefault();
+            $('.main-navbar .navbar-nav li').removeClass('active');
+            $('.main-navbar').collapse('hide');
+
+            $(this).addClass('active');
+            $("html, body").animate({ scrollTop: $($(this).children('a').attr('href')).offset().top-60 }, 1000);
+        });
+        $('.main-navbar .navbar-nav').append(link);
+
+    });
+
     var campingPosition = new google.maps.LatLng(46.980348, 8.417904);
     var mapOptions = {
         zoom: 16,
@@ -26,14 +44,20 @@ $(function () {
             style: google.maps.ZoomControlStyle.SMALL
         },
         enableCloseButton: false,
-        visible: true
+        visible: true,
+        position: campingPosition,
+        pov: {
+            heading: 34,
+            pitch: 10,
+            zoom: 1
+        }
     };
 
     var panorama = new google.maps.StreetViewPanorama(
         document.getElementById('awesome-tent'),
         panoOptions
-
     );
+
 
     panorama.registerPanoProvider(function (pano) {
         return {
@@ -43,11 +67,14 @@ $(function () {
             },
             copyright: 'Dreamhead 2014',
             tiles: {
-                tileSize: new google.maps.Size(512, 512),
-                worldSize: new google.maps.Size(6000, 3000),
-                originHeading: 90, // To align the panorama with the headings in the links.
+                tileSize: new google.maps.Size(4096, 2296),
+                worldSize: new google.maps.Size(4096, 2296),
+                // The heading in degrees at the origin of the panorama
+                // tile set.
+                centerHeading: 10,
                 getTileUrl: function (room, zoom, x, y) {
-                    return "http://new.drissig.ch/img/tile.jpg";
+                    random = Math.random();
+                    return "/img/sphere.jpg?random="+random;
                 }
             }
         };

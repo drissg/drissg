@@ -21,7 +21,7 @@
 
 .jumbotron-image {
     background: url("../img/header.jpg") no-repeat  top center;
-    background-size:100% auto ;
+    background-size: auto 100% ;
 }
 
 
