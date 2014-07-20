@@ -21,7 +21,8 @@ jQuery(function ($) {
     var mapOptions = {
         zoom: 16,
         center: campingPosition,
-        scrollwheel: false
+        scrollwheel: false,
+        mapTypeId: google.maps.MapTypeId.SATELLITE
     };
 
 
