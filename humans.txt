@@ -3,13 +3,13 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
-
-# THANKS
-
-    <name>
+    Michael Ritter -- Project Leader
+    Roman Zambail -- Content Provider
+    Manuel Meister -- Photographer
+    Robin Glauser -- Design and Development
 
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3
-    jQuery, Modernizr
+    jQuery, Modernizr, Bootstrap
+    Google Maps/Streetview API
