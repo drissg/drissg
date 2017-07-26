@@ -19,7 +19,7 @@ jQuery(function ($) {
 
     var campingPosition = new google.maps.LatLng(46.980348, 8.417904);
     var mapOptions = {
-        zoom: 16,
+        zoom: 18,
         center: campingPosition,
         scrollwheel: false,
         mapTypeId: google.maps.MapTypeId.SATELLITE
