@@ -126,6 +126,7 @@ body {
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
     .jumbotron-image {
+        background-position: top center;
         height: 45vw;
         background-size: cover;
         max-height: 50vh;
