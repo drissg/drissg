@@ -11,7 +11,7 @@ jQuery(function ($) {
             $('.main-navbar').collapse('hide');
 
             $(this).addClass('active');
-            $("html, body").animate({ scrollTop: $($(this).children('a').attr('href')).offset().top-60 }, 1000);
+            $("html, body").animate({ scrollTop: $($(this).children('a').attr('href')).offset().top-80 }, 1000);
         });
         $('.main-navbar .navbar-nav').append(link);
 
