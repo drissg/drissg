@@ -139,6 +139,24 @@ body {
 
 }
 
+.status-cut {
+    display:block;
+    position: relative;
+    height: 70px;
+    width: 333px;
+    overflow: hidden;
+    margin: 0 auto 10px;
+}
+
+.status-iframe {
+    width: 365px;
+    position: absolute;
+    left: -29px;
+    top: -32px;
+    margin: auto;
+    display: block;
+}
+
 
 
 
