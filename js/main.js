@@ -17,7 +17,7 @@ jQuery(function ($) {
 
     });
 
-    var campingPosition = new google.maps.LatLng(45.9792172, 8.8733869);
+    var campingPosition = new google.maps.LatLng(45.9788072, 8.8719385);
     var mapOptions = {
         zoom: 18,
         center: campingPosition,
