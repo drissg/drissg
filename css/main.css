@@ -37,7 +37,7 @@
 }
 
 .jumbotron-image {
-    background: url("../img/header2-dark.jpg") no-repeat -240px 0px;
+    background: url("../img/signal-2021-05-20-103217_005.jpeg") no-repeat 0px -400px;
     background-size: auto 100%;
     text-align: center;
 }
@@ -126,7 +126,7 @@ body {
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
     .jumbotron-image {
-        background-position: top center;
+        background-position: 0px -800px;
         height: 45vw;
         background-size: cover;
         max-height: 50vh;
