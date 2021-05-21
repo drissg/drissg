@@ -115,17 +115,23 @@ body {
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 480px) {
-    background-position: 0px 0px;
+    .jumbotron-image {
+        background-position: 0px 0px;
+    }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width: 600px) {
-    background-position: 0px -100px;
+    .jumbotron-image {
+        background-position: 0px -100px;
+    }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
-    background-position: 0px -200px;
+    .jumbotron-image {
+        background-position: 0px -200px;
+    }
 }
 
 /* Medium Devices, Desktops */
@@ -136,7 +142,6 @@ body {
         background-size: cover;
         max-height: 50vh;
     }
-
 }
 
 /* Large Devices, Wide Screens */
