@@ -60,6 +60,7 @@
 .jumbotron-image {
     padding-bottom: 400px;
     background-size: cover;
+    background-position: center center;
 }
 
 .jumbotron-image {
@@ -123,21 +124,21 @@ body {
 /* Small Devices, Tablets */
 @media only screen and (min-width: 600px) {
     .jumbotron-image {
-        background-position: 0px -100px;
+        background-position: 0px center;
     }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
     .jumbotron-image {
-        background-position: 0px -200px;
+        background-position: 0px center;
     }
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
     .jumbotron-image {
-        background-position: 0px -800px;
+        background-position: 0px center;
         height: 45vw;
         background-size: cover;
         max-height: 50vh;
